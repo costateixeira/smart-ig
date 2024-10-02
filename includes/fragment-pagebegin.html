@@ -41,6 +41,16 @@
 
     <style type="text/css">h2{--heading-prefix:"{{site.data.info.headingOffset}}{{label}}"}
     h3,h4,h5,h6{--heading-prefix:"{{site.data.info.headingOffset}}{{site.data.pages[page.path].label}}"}</style>
+
+  <!-- Outer container -->
+    <div id="outercontainer" style="display: flex; flex-direction: row; width: 100%;height: 100vh;">
+  <!-- Collapsible side panel -->
+  <div id="sidePanel" style="width: 100px; height: 100vh; background-color: #111;  transition: width 0.5s;">
+    <a href="javascript:void(0)" onclick="closeNav()" style="color: white; display: block; margin-top: 10px;">Close</a>
+  </div>
+  <div id="mainContent" style="flex-grow: 1; transition: margin-left 0.5s;">
+
+	  
     <div id="segment-header" class="segment">  <!-- segment-header -->
 
       <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
